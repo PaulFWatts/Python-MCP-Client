@@ -1,0 +1,21 @@
+[project]
+name = "mcp-client"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Rodrigo Girão Serrão", email = "5621605+rodrigogiraoserrao@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "click>=8.3.3",
+    "mcp>=1.27.1",
+    "rich>=15.0.0",
+]
+
+[project.scripts]
+mcp-client = "mcp_client.cli:mcp_cli"
+
+[build-system]
+requires = ["uv_build>=0.11.14,<0.12.0"]
+build-backend = "uv_build"
